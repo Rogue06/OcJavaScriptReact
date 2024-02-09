@@ -3,6 +3,80 @@
     font-family: 'Raleway', sans-serif;
 }
 
+/* Mon CSS */
+
+html {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 2%;
+}
+
+header img {
+    width: 100%;
+    max-width: 60px;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    border-color: #0065fc;
+}
+
+.navlink {
+    display: flex;
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    border-color: white;
+    height: 50px;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: -5px;
+    font-size: 22px;
+}
+
+p {
+    font-size: 16px;
+}
+
+section {
+    padding: 20px;
+}
+
+.search-button {
+    display: flex;
+    margin: 50px 0 50px 0;
+    align-items: center;
+}
+
+.icon-location {
+    border: 1px;
+    background-color: #f2f2f2;
+    padding: 17px;
+    border-radius: 15px 0 0 15px;
+    /*width: 2%;*/
+}
+
+.icon-location i {
+    color: #000000;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
