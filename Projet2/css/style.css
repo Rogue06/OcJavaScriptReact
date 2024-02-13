@@ -70,7 +70,7 @@ p {
 .icon-location {
     border: 0;
     background-color: #f2f2f2;
-    padding: 15px;
+    padding: 17px;
     border-radius: 13px 0 0 13px;
     /*width: 2%;*/
 }
@@ -156,6 +156,8 @@ p {
 .filter-buttons :hover {
     background-color: #deebff;
 }
+
+/* Fin de mon CSS */
 
 :root {
     --main-color: #0065FC;
