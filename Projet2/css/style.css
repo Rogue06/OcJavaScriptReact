@@ -15,8 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 50px 0 50px;
     margin-right: 2%;
 }
 
@@ -140,6 +139,7 @@ p {
 .filter-buttons {
     display: flex;
     gap: 20px;
+
 }
 
 .filter-button {
@@ -148,13 +148,28 @@ p {
     font-weight: bold;
     background-color: white;
     border-radius: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px 0 20px;
+
     border: 2px solid #d9d9d9;
 }
 
 .filter-buttons :hover {
     background-color: #deebff;
+}
+
+.fa-info {
+    border-radius: 30px;
+    border: 1px solid #d9d9d9;
+    padding: 4px 8px 5px 8px;
+
+}
+
+.icon-container {
+    font-size: 11px;
+}
+
+section {
+    padding-bottom: 0;
 }
 
 /* Fin de mon CSS */
@@ -172,6 +187,9 @@ p {
 body {
     display: flex;
     justify-content: center;
+    /* verif ces 2 dernières lignes en dessous (padding et margin*/
+    padding: 0;
+    margin: 0px;
 }
 
 .main-container {
@@ -191,14 +209,17 @@ a {
     font-size: 22px;
 }
 
-.card {
+.card,
+.cardheb {
+    /* Ajout de ma class .cardheb pour les cards Hebergements à Marseille*/
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card img {
+.card img .cardheb img {
+    /* définit la façon dont le contenu d'un élément remplacé (<img> ou <video> par exemple) doit s'adapter à son conteneur en utilisant sa largeur et sa hauteur.*/
     object-fit: cover;
 }
 
@@ -230,7 +251,28 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    /*flexbox*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+
+.hebergements-title {
+    align-items: center;
+    flex: 1 100%;
+    /*La propriété CSS raccourcie définit la manière dont un élément flexible s'agrandira ou se rétrécira pour s'adapter à l'espace disponible dans son conteneur flexible.flex */
+}
+
+.hebergements-cards {
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+
 
 /****** Populaires ***********/
 .populaires {
