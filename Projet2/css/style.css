@@ -126,7 +126,7 @@ p {
 }
 
 .text-after-icon {
-    font-size: 13.5px;
+    font-size: 16px;
 }
 
 .filters {
@@ -149,13 +149,14 @@ p {
     background-color: white;
     border-radius: 30px;
     padding: 0 20px 0 20px;
-
     border: 2px solid #d9d9d9;
 }
 
 .filter-buttons :hover {
     background-color: #deebff;
 }
+
+
 
 .fa-info {
     border-radius: 30px;
@@ -166,11 +167,14 @@ p {
 
 .icon-container {
     font-size: 11px;
+    padding: 0 10px 0 0;
 }
 
 section {
     padding-bottom: 0;
 }
+
+
 
 /* Fin de mon CSS */
 
