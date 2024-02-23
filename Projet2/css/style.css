@@ -1,6 +1,10 @@
 /****** General ***********/
 * {
     font-family: "Raleway", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 /* Mon CSS */
@@ -93,7 +97,7 @@ p {
 }
 
 .button {
-    padding: 15px;
+    padding: 16.5px;
     background-color: #0065fc;
     border: none;
     border-radius: 0 13px 13px 0;
@@ -138,6 +142,11 @@ p {
     margin-bottom: 30px;
 }
 
+.filter-title h2 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
 .filter-buttons {
     display: flex;
     gap: 20px;
@@ -166,6 +175,10 @@ p {
 .icon-container {
     font-size: 11px;
     padding: 0 10px 0 0;
+}
+
+.icon-container i {
+    font-size: 11px;
 }
 
 section {
@@ -277,7 +290,10 @@ a {
     width: 31%;
 }
 
-
+.hebergements-cards .card-rating {
+    margin: 2%;
+    /* à vérifié, alignement étoile */
+}
 
 
 .cardheb img {
