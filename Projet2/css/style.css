@@ -125,7 +125,6 @@ p {
 
 .text-after-icon {
     font-size: 16px;
-
 }
 
 .space-txt-after-icon {
@@ -173,30 +172,6 @@ section {
     padding-bottom: 0;
 }
 
-/*
-.cardheb img {
-    width: 250px;
-    height: 125px;
-    border-radius: 20px 20px 0 0;
-}
-
-.cardheb {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: 200px;
-    padding: 0 0 15px 0;
-
-}
-
-.card-content {
-    display: flex;
-    padding: 0 15px;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-*/
-
 
 /* Fin de mon CSS */
 
@@ -236,9 +211,7 @@ a {
     font-size: 22px;
 }
 
-.card,
-.cardheb {
-    /* Ajout de ma class .cardheb pour les cards Hebergements à Marseille*/
+.card {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -247,15 +220,6 @@ a {
     /* fluidité de transition hover */
 }
 
-.card img .cardheb img {
-    /* définit la façon dont le contenu d'un élément remplacé (<img> ou <video> par exemple) doit s'adapter à son conteneur en utilisant sa largeur et sa hauteur.*/
-    object-fit: cover;
-    /* à voir si je garde */
-}
-
-.card-title {
-    font-size: 16px;
-}
 
 .euro {
     font-weight: 700;
@@ -296,33 +260,52 @@ a {
 }
 
 .hebergements-cards {
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    margin: 10px;
-
-
+    /* si row de 3 cards à 31%, le restant pour 2 gaps : gap = (3*31) / 2 = 3.5 */
+    gap: 3.5%;
 }
 
+.hebergements-cards .card-title {
+    margin: 5px 0 5px;
+}
+
+/* contient des "a" et non des ".cardheb"... */
+.hebergements-cards>a {
+    width: 31%;
+}
+
+
+
+
 .cardheb img {
-    width: 200px;
-    height: 100px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 124px;
+    border: 5px solid white;
+    border-bottom: 0;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
-
 }
 
 .cardheb {
-
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     text-decoration: none;
     color: inherit;
-    width: 200px;
-    height: 180px;
-    margin: 20px;
     transition: transform 0.3s ease;
     /* fluidité de transition hover */
+}
+
+.cardheb .card-content {
+    /* top=0 car espace déjà existant avec l'image, d'où vient-il !? */
+    padding: 0 15px 10px 15px;
+    margin: 0;
 }
 
 /* Effet de survol */
@@ -336,21 +319,11 @@ a {
     /* Agrandir légèrement la carte au survol */
 }
 
-
 .card-title {
+    font-size: 16px;
     margin: 5px;
     font-weight: 700;
 }
-
-.hebergements-cards .card-content {
-    display: flex;
-    width: 100%;
-    padding-left: 10px;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
-
 
 .card-txt {
     width: 100%;
@@ -359,17 +332,15 @@ a {
 .show-more {
     font-size: 18px;
     font-weight: 700;
-    margin-top: 40px;
     width: 100%;
+    padding: 5px;
 }
 
 .card-subtitle {
-    margin: 2%;
+
     font-size: 14px;
     font-weight: 400;
 }
-
-
 
 /****** Populaires ***********/
 .populaires {
@@ -388,6 +359,8 @@ a {
 }
 
 .populaires-cards img {
+    object-fit: cover;
+    /*-- La propriété CSS object-fit définit la façon dont le contenu d'un élément remplacé (<img> ou <video> par exemple) doit s'adapter à son conteneur en utilisant sa largeur et sa hauteur. --*/
     width: 33%;
     height: 136px;
     border-top-left-radius: 20px;
@@ -403,8 +376,8 @@ a {
     box-sizing: border-box;
 }
 
-
 .populaires-cards .card-title {
+    margin: 0;
     margin-top: 10px;
     margin-bottom: 4px;
 }
@@ -415,6 +388,8 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+
+
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
