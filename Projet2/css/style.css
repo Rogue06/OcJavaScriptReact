@@ -60,6 +60,7 @@ section {
 
 p {
     font-size: 16px;
+    padding-top: 20px;
 }
 
 .search-button {
@@ -405,8 +406,72 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 
+}
+
+
+
+/****** Activités à Marseille  ***********/
+
+
+
+.marseille-activities {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
 }
+
+.marseille-activities img {
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 0;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+
+}
+
+
+
+.activities-title {
+    margin: 50px 30px 5px 30px;
+    font-size: 22px;
+}
+
+.cardact {
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    /* fluidité de transition hover */
+
+}
+
+.cardact img {
+    width: 297.5px;
+    height: 380px;
+
+
+}
+
+.cardact .card-content {
+    padding: 0 15px 10px 15px;
+    margin: 0;
+}
+
+/* Effet de survol */
+.cardact:hover {
+    transform: scale(1.05);
+    /* Agrandir légèrement la carte au survol */
+}
+
+
+
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
