@@ -63,6 +63,11 @@ p {
     padding-top: 20px;
 }
 
+a {
+    cursor: auto;
+}
+
+
 .search-button {
     display: flex;
     margin: 50px 0 50px 0;
@@ -350,7 +355,7 @@ a {
     font-size: 18px;
     font-weight: 700;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
 }
 
 .card-subtitle {
@@ -409,15 +414,14 @@ a {
 }
 
 
-
 /****** Activités à Marseille  ***********/
 
 
 
 .marseille-activities {
-    width: 100%;
+
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 
 }
@@ -428,15 +432,15 @@ a {
     border-bottom: 0;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
-
 }
 
-
-
-.activities-title {
-    margin: 50px 30px 5px 30px;
-    font-size: 22px;
+.div-title {
+    display: flex;
+    flex-basis: 100%;
+    /* Mieux que width dans un contexte flexbox */
+    padding: 15px 0 30px 0;
 }
+
 
 .cardact {
     width: 100%;
@@ -448,19 +452,22 @@ a {
     color: inherit;
     transition: transform 0.3s ease;
     /* fluidité de transition hover */
-
 }
 
 .cardact img {
+    display: flex;
+    flex-wrap: wrap;
     width: 297.5px;
     height: 380px;
-
-
 }
 
 .cardact .card-content {
     padding: 0 15px 10px 15px;
     margin: 0;
+}
+
+.cardact .card-title {
+    margin: 20px 0 5px;
 }
 
 /* Effet de survol */
@@ -470,6 +477,35 @@ a {
 }
 
 
+/****** Footer ***********/
+
+.pdp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 300px;
+    background-color: var(--main-bg-color);
+    padding: 20px;
+
+}
+
+
+
+.about-list,
+.hebergements-list,
+.assistance-list {
+    list-style: none;
+
+}
+
+.pdp h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
+
+}
+
+.pdp li {
+    padding: 10px 0;
+}
 
 
 
