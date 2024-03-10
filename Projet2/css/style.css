@@ -19,7 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px 0 50px;
+    padding-left: 20px;
     margin-right: 2%;
 }
 
@@ -223,6 +223,7 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+
 }
 
 .section-title {
@@ -237,6 +238,7 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     transition: transform 0.3s ease;
     /* fluidité de transition hover */
+
 }
 
 
@@ -270,6 +272,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
 }
 
 .hebergements-title {
@@ -285,6 +288,7 @@ a {
     flex-wrap: wrap;
     /* si row de 3 cards à 31%, le restant pour 2 gaps : gap = (3*31) / 2 = 3.5 */
     gap: 3.5%;
+
 }
 
 .hebergements-cards .card-title {
@@ -301,6 +305,10 @@ a {
     /* à vérifié, alignement étoile */
 }
 
+.hebergements-cards a {
+    cursor: pointer;
+}
+
 
 .cardheb img {
     box-sizing: border-box;
@@ -310,6 +318,7 @@ a {
     border-bottom: 0;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
+
 }
 
 .cardheb {
@@ -354,8 +363,9 @@ a {
 .show-more {
     font-size: 18px;
     font-weight: 700;
-    width: 100%;
-    padding: 10px;
+    padding: 0;
+
+
 }
 
 .card-subtitle {
@@ -363,6 +373,8 @@ a {
     font-size: 14px;
     font-weight: 400;
 }
+
+
 
 /****** Populaires ***********/
 .populaires {
@@ -413,6 +425,9 @@ a {
 
 }
 
+.populaires-cards a {
+    cursor: pointer;
+}
 
 /****** Activités à Marseille  ***********/
 
@@ -476,6 +491,9 @@ a {
     /* Agrandir légèrement la carte au survol */
 }
 
+.cardact a {
+    cursor: pointer;
+}
 
 /****** Footer ***********/
 
@@ -507,13 +525,19 @@ a {
     padding: 10px 0;
 }
 
-
+.pdp a {
+    cursor: pointer;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    body {
+        background-color: red;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -544,9 +568,18 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-}
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
-}
+    /* Mon Responsive */
+
+
+    .marseille-activities {
+        flex-flow: row;
+
+    }
+
+
+
+    /* Small devices (phones, less than 768px) */
+    @media (max-width: 767.98px) {
+        /* ... */
+    }
