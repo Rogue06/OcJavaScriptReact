@@ -265,17 +265,10 @@ a {
 .hebergements {
     width: 65%;
     margin: 0;
-    gap: 40px;
-    /*flexbox*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
 }
 
 .hebergements-title {
     align-items: center;
-    flex: 1 100%;
     /*La propriété CSS raccourcie définit la manière dont un élément flexible s'agrandira ou se rétrécira pour s'adapter à l'espace disponible dans son conteneur flexible.flex */
 }
 
@@ -295,6 +288,7 @@ a {
 
 /* contient des "a" et non des ".cardheb"... */
 .hebergements-cards>a {
+    margin-top: 33px;
     width: 31%;
 }
 
@@ -320,6 +314,9 @@ a {
 
 .cardheb {
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 30px;
     background-color: white;
     border-radius: 20px;
@@ -330,10 +327,15 @@ a {
     /* fluidité de transition hover */
 }
 
+
 .cardheb .card-content {
     /* top=0 car espace déjà existant avec l'image, d'où vient-il !? */
+    flex-grow: 1;
     padding: 0 15px 10px 15px;
     margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 /* Effet de survol */
@@ -361,6 +363,7 @@ a {
     font-size: 18px;
     font-weight: 700;
     padding: 0;
+    margin-top: 20px;
 
 
 }
@@ -429,31 +432,19 @@ a {
 
 
 
-.marseille-activities {
+.marseille-activities {}
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
-.marseille-activities img {
-    width: 100%;
-    border-bottom: 0;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-}
-
-.div-title {
-    display: flex;
-    flex-basis: 100%;
+.marseille-activities .div-title {
     /* Mieux que width dans un contexte flexbox */
     padding: 15px 0 30px 0;
 }
 
+.activities-cards {
+    display: flex;
+    gap: 30px;
+}
 
 .cardact {
-    width: 100%;
     margin-bottom: 30px;
     background-color: white;
     border-radius: 20px;
@@ -465,9 +456,10 @@ a {
 }
 
 .cardact img {
-    display: flex;
-    flex-wrap: wrap;
-    width: 297.5px;
+    width: 100%;
+    border-bottom: 0;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
     height: 380px;
 }
 
