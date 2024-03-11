@@ -317,7 +317,6 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -329,8 +328,9 @@ a {
 
 
 .cardheb .card-content {
-    /* top=0 car espace déjà existant avec l'image, d'où vient-il !? */
+
     flex-grow: 1;
+    /* La div grandira dans la même proportion que la taille de la fenêtre  */
     padding: 0 15px 10px 15px;
     margin: 0;
     display: flex;
@@ -432,7 +432,7 @@ a {
 
 
 
-.marseille-activities {}
+
 
 .marseille-activities .div-title {
     /* Mieux que width dans un contexte flexbox */
@@ -445,7 +445,7 @@ a {
 }
 
 .cardact {
-    /* flex: 1; */
+    flex: 1;
     margin-bottom: 30px;
     background-color: white;
     border-radius: 20px;
@@ -487,8 +487,8 @@ a {
 
 .pdp {
     display: flex;
-    flex-wrap: wrap;
-    gap: 300px;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: var(--main-bg-color);
     padding: 20px;
 
@@ -515,6 +515,10 @@ a {
 
 .pdp a {
     cursor: pointer;
+}
+
+.assistance-footer {
+    margin-right: 250px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -565,9 +569,19 @@ a {
 
     }
 
+    /******************** FOOTER ********************/
+
+    .assistance-footer {
+        margin-right: 80px;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
     /* ... */
+    body {
+        background-color: Black;
+    }
 }
