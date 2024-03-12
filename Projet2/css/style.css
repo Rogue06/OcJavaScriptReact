@@ -501,6 +501,7 @@ a {
 .assistance-list {
     list-style: none;
 
+
 }
 
 .pdp h3 {
@@ -517,8 +518,11 @@ a {
     cursor: pointer;
 }
 
+.about-footer,
+.hebergements-footer,
 .assistance-footer {
-    margin-right: 250px;
+    flex-grow: 1;
+    padding: 0 20px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -561,6 +565,37 @@ a {
         font-size: 13px;
     }
 
+    .cardact {
+        position: relative;
+        height: 250px;
+    }
+
+    .cardact img {
+        position: absolute;
+        border-radius: 20px;
+
+    }
+
+    .cardact a>img,
+    .cardact a {
+        display: block;
+        height: 100%
+    }
+
+    .cardact .card-content {
+        position: absolute;
+        width: 100%;
+        height: 73px;
+        bottom: 0;
+        background-color: white;
+        border-radius: 0 0 20px 20px;
+
+    }
+
+
+
+
+
     /* Mon Responsive */
 
 
@@ -571,9 +606,8 @@ a {
 
     /******************** FOOTER ********************/
 
-    .assistance-footer {
-        margin-right: 80px;
-    }
+
+
 
 }
 
@@ -599,6 +633,8 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+
     }
 
     header>div,
@@ -618,7 +654,9 @@ a {
         width: 100%;
         padding: 10px;
         text-align: center;
-        /*   border-bottom: 3px solid transparent;
+        position: relative;
+        top: 3px;
+        /*   border-bottom: 3px solid;
         margin-bottom: -3px;
         height: 50px;
         align-items: center; */
