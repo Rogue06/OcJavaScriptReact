@@ -719,7 +719,7 @@ a {
 
 
 
-    /* .filter-title {
+    .filter-title {
         margin-left: 30px;
     }
 
@@ -735,5 +735,5 @@ a {
         width: 45%;
         align-items: center;
         justify-content: flex-start;
-        font-size: 130%; */
-}
+        font-size: 130%;
+    }
