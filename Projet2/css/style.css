@@ -635,6 +635,7 @@ a {
     .divlogo {
         display: flex;
         justify-content: center;
+        margin-top: 30px;
     }
 
     header {
@@ -706,6 +707,13 @@ a {
 
 
     /******************** Filtres ********************/
+    /* TODO List 
+- enlever l'espacement entre les borders de la nav
+- Passer le h2 à gauche
+- adapter les spans text boutons filtres au content des boutons
+
+
+*/
 
     .filters {
         margin: 0;
@@ -737,3 +745,8 @@ a {
         justify-content: flex-start;
         font-size: 130%;
     }
+
+    /******************** Hébergements à Marseille ********************/
+
+
+}
