@@ -874,4 +874,18 @@ a {
         height: 99%;
     }
 
+
+    /******************** Footer ********************/
+
+    .pdp {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+
+    .hebergements-footer,
+    .assistance-footer {
+        margin-top: 40px;
+    }
+
 }
