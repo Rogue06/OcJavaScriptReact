@@ -140,7 +140,7 @@ a {
 }
 
 .space-txt-after-icon {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .filters {
@@ -536,10 +536,33 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    body {
-        background-color: red;
+
+
+    .divlogo {
+        margin: 30px 0;
     }
 
+    header,
+    section {
+        padding: 0;
+    }
+
+    /*body {
+        background-color: red;
+    } */
+
+
+    /******************** Filters ********************/
+    .filters {
+        display: inline-block;
+    }
+
+    .filters h2 {
+        margin-bottom: 20px;
+    }
+
+
+    /******************** hebergements à Marseille ********************/
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -652,7 +675,7 @@ a {
     }
 
     nav {
-
+        gap: 0;
         margin: 30px 0 30px;
     }
 
@@ -687,13 +710,22 @@ a {
 
     #search-button .fa-magnifying-glass {
         color: white;
+    }
 
+
+
+    .search-bar {
+        flex-grow: 1;
+    }
+
+    #site-search {
+        width: 100%;
     }
 
     .button {
         padding: 18px;
         border-radius: 15px;
-        margin: -15px;
+        margin: -2px;
         box-shadow: 3px 3px 8px #666666;
 
     }
@@ -728,23 +760,26 @@ a {
 
 
     .filter-title {
-        margin-left: 30px;
+        margin-left: 0;
     }
 
     .filter-buttons {
         flex-wrap: wrap;
-        align-items: center;
         justify-content: center;
         margin: 30px 0;
+        gap: 10px;
     }
 
     .filter-button {
         display: flex;
-        width: 45%;
+        /*width: 45% */
+        flex-basis: calc(45% - 10px);
+        /* 2x 5 = 10 c'est la taille du gap à déduire*/
+        flex-grow: 1;
         align-items: center;
         justify-content: flex-start;
-        font-size: 1em;
-        * Utilisez une unité de mesure flexible pour la taille de la police */ padding: 0 10px;
+        font-size: 14px;
+        padding: 0 10px;
         margin-bottom: 10px;
 
     }
@@ -758,8 +793,6 @@ a {
 
     .populaires {
         width: 100%;
-        height: 569px;
-        max-width: 768px;
         /* Largeur section populaire */
         margin: 40px 0;
         order: 1;
@@ -818,9 +851,6 @@ a {
 
     .hebergements {
         order: 2;
-        width: 375px;
-        height: 1500px;
-        /* sur maquette 1435.5px indiqué */
     }
 
 
@@ -829,9 +859,13 @@ a {
         flex-direction: column;
     }
 
+    .hebergements-cards>a {
+        width: 100%;
+    }
+
     .hebergements-cards .cardheb {
         display: flex;
-        width: 335px;
+        width: 100%;
         height: 207px;
     }
 
@@ -841,24 +875,17 @@ a {
 
     /******************** Activités à Marseille ********************/
 
-    .marseille-activities {
-        flex-flow: column;
-        width: 375px;
-        height: 965px;
-
-    }
+    .marseille-activities {}
 
     .activities-cards {
         flex-direction: column;
         display: block;
-        width: 315px;
-        height: 200px;
     }
 
 
     .activities-cards .cardact {
         display: flex;
-        width: 315px;
+        width: 100%;
         height: 200px;
     }
 
@@ -870,7 +897,7 @@ a {
 
     .cardact a>img {
 
-        width: 315px;
+        width: 100%;
         height: 99%;
     }
 
