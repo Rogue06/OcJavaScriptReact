@@ -702,6 +702,8 @@ a {
     }
 
 
+
+
     /******************** button ********************/
 
 
@@ -794,12 +796,22 @@ a {
         /* Ajout de marge entre icone et texte span */
     }
 
+    .icon-container .text-after-icon {
+        display: flex;
+        justi
+    }
+
+
+
+
+
     /******************** Les plus populaires ********************/
 
     .populaires {
         width: 100%;
         /* Largeur section populaire */
-        margin: 40px 0;
+        margin: 0;
+        margin-top: 10px;
         order: 1;
     }
 
@@ -867,6 +879,8 @@ a {
 
     .hebergements {
         order: 2;
+
+
     }
 
     .hebergements-and-populaires>.hebergements {
@@ -875,6 +889,7 @@ a {
 
     .hebergements-cards {
         flex-direction: column;
+
     }
 
     .hebergements-cards>a {
