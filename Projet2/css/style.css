@@ -290,7 +290,8 @@ a {
 
 /* contient des "a" et non des ".cardheb"... */
 .hebergements-cards>a {
-    margin-top: 33px;
+    margin-top: 20px;
+    /* margin-top ecart des cards*/
     width: 31%;
 }
 
@@ -452,7 +453,8 @@ a {
 
 .cardact {
     flex: 1;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    /*margin-bottom écart des cards */
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -736,7 +738,6 @@ a {
     .button:hover {
         transform: scale(1.05);
         transition: transform 0.3s ease;
-
     }
 
 
@@ -796,9 +797,9 @@ a {
         /* Ajout de marge entre icone et texte span */
     }
 
-    .icon-container .text-after-icon {
+    .space-txt-after-icon {
         display: flex;
-        justi
+
     }
 
 
@@ -828,7 +829,7 @@ a {
     }
 
     .populaires-cards img {
-        width: 33%;
+        width: 111.67px;
         height: 136px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
